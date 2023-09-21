@@ -46,7 +46,7 @@ const Table = ({ data }) => {
               <td>{d.max_price}</td>
               <td>
                 <button>
-                  <img className="" src="/icon/edit.png" alt="" />
+                  <img className="" src="../../public/icon/edit.png" alt="" />
                 </button>
               </td>
             </tr>
