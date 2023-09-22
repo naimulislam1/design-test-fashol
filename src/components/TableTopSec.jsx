@@ -9,7 +9,7 @@ import {
   HiChevronDown,
 } from "react-icons/hi2";
 
-const TableTop = () => {
+const TableTopSec = () => {
   return (
     <div className="flex justify-between items-center mb-7">
       {/* Top Left */}
@@ -147,4 +147,4 @@ const TableTop = () => {
   );
 };
 
-export default TableTop;
+export default TableTopSec;

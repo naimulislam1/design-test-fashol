@@ -1,7 +1,11 @@
-import moment from "moment";
-const Table = ({ data }) => {
+import { useState } from "react";
+import TableRow from "./TableRow";
+const Table = ({ data, personData }) => {
+  const [personInfo, setPersonInfo] = useState();
   const popUp = (id) => {
-    console.log("Loading", id);
+    const person = personData.find((p) => p?.purchase_id === id);
+    console.log(person);
+    setPersonInfo(person);
   };
   return (
     <div className="overflow-x-auto">
@@ -30,26 +34,13 @@ const Table = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data?.map((d, i) => (
-            <tr
-              onClick={() => popUp(d.id)}
-              key={i}
-              className="border-b border-b-green-400"
-            >
-              <td>{moment(d.date).format("D MMM, YYYY")}</td>
-              <td>{d.id}</td>
-              <td>{d.name}</td>
-              <td>{d.variant}</td>
-              <td>{d.unit}</td>
-              <td>{d.demand}</td>
-              <td>{d.min_price}</td>
-              <td>{d.max_price}</td>
-              <td>
-                <button>
-                  <img className="" src="../../public/icon/edit.png" alt="" />
-                </button>
-              </td>
-            </tr>
+          {data?.map((d) => (
+            <TableRow
+              key={d.id}
+              d={d}
+              popUp={popUp}
+              personInfo={personInfo}
+            ></TableRow>
           ))}
         </tbody>
       </table>

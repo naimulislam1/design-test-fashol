@@ -1,0 +1,37 @@
+[
+  {
+    "purchase_id": 1,
+    "vendor_name": "Vendor A",
+    "address": "123 Main St, City, Country",
+    "quantity": 10,
+    "price": 15.99
+  },
+  {
+    "purchase_id": 2,
+    "vendor_name": "Vendor B",
+    "address": "456 Elm St, City, Country",
+    "quantity": 5,
+    "price": 10.5
+  },
+  {
+    "purchase_id": 3,
+    "vendor_name": "Vendor C",
+    "address": "789 Oak St, City, Country",
+    "quantity": 8,
+    "price": 12.75
+  },
+  {
+    "purchase_id": 4,
+    "vendor_name": "Vendor D",
+    "address": "987 Cedar St, City, Country",
+    "quantity": 12,
+    "price": 18.25
+  },
+  {
+    "purchase_id": 5,
+    "vendor_name": "Vendor E",
+    "address": "654 Pine St, City, Country",
+    "quantity": 7,
+    "price": 14.0
+  }
+]
